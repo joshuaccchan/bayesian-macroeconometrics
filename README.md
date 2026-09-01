@@ -37,7 +37,7 @@ Appendices: Common Probability Distributions; Matrix Algebra.
 
 ## Code
 
-`code/matlab/chapter1` ... `chapter14` contain the MATLAB code for every chapter's
+`code/matlab/chapter01` ... `chapter14` contain the MATLAB code for every chapter's
 examples, applications, and figures. Each folder is **self-contained**: it carries the
 data and helper functions its scripts need. To run anything, set MATLAB's working
 directory to the chapter folder and run the script.
