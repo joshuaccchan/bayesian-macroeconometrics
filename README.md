@@ -11,6 +11,7 @@ in full. Posted with the publisher's permission. The PDF is copyrighted material
 ## Contents of the book
 
 **Part I - Core Bayesian Modeling and Assessment**
+
 1. Foundations of Bayesian Econometrics
 2. Normal Linear Regression
 3. Linear Regression with General Errors
@@ -18,11 +19,13 @@ in full. Posted with the publisher's permission. The PDF is copyrighted material
 5. Bayesian Model Comparison
 
 **Part II - Bayesian Computation and High-Dimensional Methods**
+
 6. Foundations of Bayesian Computation
 7. Bayesian Shrinkage Methods
 8. Bayesian Nonparametric Methods
 
 **Part III - Bayesian Time-Series Models**
+
 9. Linear Gaussian State Space Models
 10. Stochastic Volatility Models
 11. Factor Models
@@ -67,7 +70,7 @@ chapter folders that use them:
 
 If you use this code, please cite the book:
 
-> Chan, J. C. C. *Bayesian Macroeconometrics: Methods and Applications*.
+> Chan, J. C. C. *Bayesian Macroeconometrics: Methods and Applications*, published by Chapman & Hall/CRC Press, forthcoming.
 
 ## License
 
