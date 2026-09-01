@@ -70,7 +70,16 @@ chapter folders that use them:
 
 If you use this code, please cite the book:
 
-> Chan, J. C. C. *Bayesian Macroeconometrics: Methods and Applications*, published by Chapman & Hall/CRC Press, forthcoming.
+> Chan, J. C. C. *Bayesian Macroeconometrics: Methods and Applications*. Chapman & Hall/CRC, forthcoming.
+
+```bibtex
+@book{chan-bmar,
+  author    = {Chan, Joshua C. C.},
+  title     = {Bayesian Macroeconometrics: Methods and Applications},
+  publisher = {Chapman \& Hall/CRC},
+  note      = {Forthcoming}
+}
+```
 
 ## License
 
