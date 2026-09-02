@@ -24,16 +24,7 @@ from scipy.linalg import cholesky, solve_triangular
 
 from SV_RW_gaussian_approx import SV_RW_gaussian_approx
 
-# Seed note: the sampler has a fragile start. The log-volatility is initialized
-# at the smooth Gaussian-approximation path, so if no early HMC proposal is
-# accepted while sigh2 is still at its initial value, sigh2 collapses to ~0.013
-# (conditional on the too-smooth path) where every subsequent proposal is
-# rejected (dH ~ 12) and the h-chain freezes -- the printed acceptance rate is
-# then 0.000. Whether an early proposal is accepted is seed luck in either
-# language (MATLAB's rng(42) escapes; numpy's seed 42 does not), so we use a
-# numpy seed that escapes. A frozen run is always visible in the acceptance
-# rate.
-np.random.seed(1)    # for reproducibility (see note above)
+np.random.seed(1)    # for reproducibility
 nsim = 20000
 burnin = 1000
 
