@@ -50,11 +50,12 @@ One data file must be downloaded rather than shipped: in `chapter10`, run
 `get_SP500_data.m` once to create `SP500.csv` (the S&P 500 series is proprietary to
 S&P Dow Jones Indices and cannot be redistributed; the script's header has details).
 
-**Python ports are available** in `code/python`, mirroring the MATLAB folders
-script-for-script (`linreg_t.m` -> `linreg_t.py`); each script's output has been
-validated against the MATLAB version, with per-script status in `code/PARITY.md`.
-They require Python 3.10+ with numpy, scipy, pandas, and matplotlib. **An R port
-is planned.**
+**Python and R ports are available** in `code/python` and `code/R`, mirroring the
+MATLAB folders script-for-script (`linreg_t.m` -> `linreg_t.py` / `linreg_t.R`);
+each script's output has been validated against the MATLAB version, with
+per-script status in `code/PARITY.md`. The Python code requires Python 3.10+ with
+numpy, scipy, pandas, and matplotlib; the R code requires only R 4.x and the
+`Matrix` package that ships with it.
 
 ## Data sources
 
