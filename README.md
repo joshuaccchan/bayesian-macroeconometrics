@@ -10,52 +10,72 @@ in full. Posted with the publisher's permission. The PDF is copyrighted material
 
 ## Contents of the book
 
+Each chapter links to its MATLAB code; the R and Python ports mirror the same folder
+names under `code/R` and `code/python`.
+
 **Part I - Core Bayesian Modeling and Assessment**
 
-1. Foundations of Bayesian Econometrics
-2. Normal Linear Regression
-3. Linear Regression with General Errors
-4. Mixture Models
-5. Bayesian Model Comparison
+1. [Foundations of Bayesian Econometrics](code/matlab/chapter01)
+2. [Normal Linear Regression](code/matlab/chapter02)
+3. [Linear Regression with General Errors](code/matlab/chapter03)
+4. [Mixture Models](code/matlab/chapter04)
+5. [Bayesian Model Comparison](code/matlab/chapter05)
 
 **Part II - Bayesian Computation and High-Dimensional Methods**
 
-6. Foundations of Bayesian Computation
-7. Bayesian Shrinkage Methods
-8. Bayesian Nonparametric Methods
+6. [Foundations of Bayesian Computation](code/matlab/chapter06)
+7. [Bayesian Shrinkage Methods](code/matlab/chapter07)
+8. [Bayesian Nonparametric Methods](code/matlab/chapter08)
 
 **Part III - Bayesian Time-Series Models**
 
-9. Linear Gaussian State Space Models
-10. Stochastic Volatility Models
-11. Factor Models
-12. Vector Autoregressions
-13. Time-Varying Vector Autoregressions
-14. Large VARs with Stochastic Volatility
+9. [Linear Gaussian State Space Models](code/matlab/chapter09)
+10. [Stochastic Volatility Models](code/matlab/chapter10)
+11. [Factor Models](code/matlab/chapter11)
+12. [Vector Autoregressions](code/matlab/chapter12)
+13. [Time-Varying Vector Autoregressions](code/matlab/chapter13)
+14. [Large VARs with Stochastic Volatility](code/matlab/chapter14)
 
 Appendices: Common Probability Distributions; Matrix Algebra.
 
 ## Code
 
+### Layout
+
 `code/matlab/chapter01` ... `chapter14` contain the MATLAB code for every chapter's
 examples, applications, and figures. Each folder is **self-contained**: it carries the
-data and helper functions its scripts need. To run anything, set MATLAB's working
-directory to the chapter folder and run the script.
+data and helper functions its scripts need.
 
-Requirements: a recent MATLAB with the Statistics and Machine Learning Toolbox.
+### Running it
+
+Set MATLAB's working directory to the chapter folder and run the script — no
+installation or path setup is needed.
+
+```matlab
+cd code/matlab/chapter02
+linreg_NIG_predictive
+```
+
+### Requirements
+
+A recent MATLAB with the Statistics and Machine Learning Toolbox.
 `chapter14/forecast_largeVAR.m` (an 8-model recursive forecasting exercise with a
 runtime of several hours) additionally uses the Parallel Computing Toolbox.
 
-One data file must be downloaded rather than shipped: in `chapter10`, run
-`get_SP500_data.m` once to create `SP500.csv` (the S&P 500 series is proprietary to
-S&P Dow Jones Indices and cannot be redistributed; the script's header has details).
+### R and Python
 
-**Python and R ports are available** in `code/python` and `code/R`, mirroring the
-MATLAB folders script-for-script (`linreg_t.m` -> `linreg_t.py` / `linreg_t.R`);
-each script's output has been validated against the MATLAB version, with
-per-script status in `code/PARITY.md`. The Python code requires Python 3.10+ with
-numpy, scipy, pandas, and matplotlib; the R code requires only R 4.x and the
-`Matrix` package that ships with it.
+`code/R` and `code/python` mirror the MATLAB folders script-for-script
+(`linreg_t.m` → `linreg_t.R` / `linreg_t.py`), and each script's output has been
+validated against the MATLAB version — per-script status is in
+[`code/PARITY.md`](code/PARITY.md). The Python code needs Python 3.10+ with numpy,
+scipy, pandas and matplotlib; the R code needs only R 4.x and the `Matrix` package
+that ships with it.
+
+### One data file to download
+
+In `chapter10`, run `get_SP500_data.m` once to create `SP500.csv`. The S&P 500 series
+is proprietary to S&P Dow Jones Indices and cannot be redistributed; the script's
+header has the details.
 
 ## Data sources
 
