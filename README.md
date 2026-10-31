@@ -99,14 +99,14 @@ chapter folders that use them:
 
 If you use this code, please cite the book:
 
-> Chan, J. C. C. *Bayesian Macroeconometrics: Methods and Applications*. Chapman & Hall/CRC, forthcoming.
+> Chan, J. C. C. *Bayesian Macroeconometrics: Methods and Applications*. Chapman & Hall/CRC, 2027.
 
 ```bibtex
 @book{chan-bmar,
   author    = {Chan, Joshua C. C.},
   title     = {Bayesian Macroeconometrics: Methods and Applications},
   publisher = {Chapman \& Hall/CRC},
-  note      = {Forthcoming}
+  year      = {2027}
 }
 ```
 
